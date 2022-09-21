@@ -209,3 +209,118 @@ footer .container {
     justify-content: center;
     align-items: flex-end;
 }
+
+@media (min-width:720px) {
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #somos .container{
+        display: flex;  
+        justify-content: space-evenly;
+    }
+
+    #somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #somos h2{
+        margin-top: 0px;
+    }
+
+    #somos .image-container{
+        background-image: url(../media/evento=0.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #eventos .evento{
+        display: flex;
+        justify-content: center;
+    } 
+
+    #eventos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #eventos h2{
+        font-size: 4em;
+    }
+
+
+    #eventos h3{
+        margin-top: 0;
+    }
+
+    #eventos .carta{
+        padding: 50px;
+    }
+
+    #eventos .carta {
+        background-size: cover; 
+        background-position: center center;
+        padding: 50px;
+        margin: 20px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    #caracteristicas{
+        background-image: url(../media/logo_liceo.jpg);
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+        background-position: calc(100vw - 500px) 50px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #informacion h2{
+        font-size: 5em;
+    }
+
+    #informacion button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1300px){
+    #caracteristicas{
+        background-position: calc(100vw - 800px);
+    }
+}
